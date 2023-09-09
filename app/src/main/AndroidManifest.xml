@@ -17,10 +17,28 @@
         android:theme="@style/Theme.Noteapp"
         tools:targetApi="31">
         <activity
-            android:name=".DeleteActivity.DeleteActivity"
+            android:name=".activity.PrivacyPolicyActivity"
             android:exported="false" />
         <activity
-            android:name=".Setting.SettingActivity"
+            android:name=".activity.Note.RestoreNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Note.CreateNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LockScreen.LockScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LockScreen.LockRemoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.About.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeleteActivity.DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Setting.SettingActivity"
             android:exported="false" />
         <activity
             android:name=".LockScreenActivity"
