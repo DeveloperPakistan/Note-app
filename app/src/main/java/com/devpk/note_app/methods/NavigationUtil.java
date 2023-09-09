@@ -6,8 +6,8 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
-import com.devpk.note_app.DeleteActivity.DeleteActivity;
-import com.devpk.note_app.Setting.SettingActivity;
+import com.devpk.note_app.activity.DeleteActivity.DeleteActivity;
+import com.devpk.note_app.activity.Setting.SettingActivity;
 
 public class NavigationUtil {
 
