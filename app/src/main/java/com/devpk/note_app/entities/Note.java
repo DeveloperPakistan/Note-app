@@ -1,18 +1,40 @@
-package com.devpk.note_app.model;
+package com.devpk.note_app.entities;
 
 import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+
+//Table
+//entity is table
+@Entity(tableName = "notes")
 public class Note implements Serializable {
 
+    // ... field definitions that map to columns go here ...
+
+    @PrimaryKey(autoGenerate = true)
     private int id;
+    @ColumnInfo(name = "title")
     private String title;
+    @ColumnInfo(name = "date_time")
     private String dateTime;
+
+    @ColumnInfo(name = "subtitle")
     private String Subtitle;
+
+    @ColumnInfo(name = "note_text")
     private String noteText;
+
+    @ColumnInfo(name = "image_path")
     private String imagePath;
+
+    @ColumnInfo(name = "color")
     private String color;
+
+    @ColumnInfo(name = "web_link")
     private String webLink;
 
     public int getId() {
