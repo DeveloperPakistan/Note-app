@@ -24,8 +24,7 @@ import com.devpk.note_app.R;
 import com.devpk.note_app.SharedPref.Setting;
 import com.devpk.note_app.adapter.NoteAdapter;
 import com.devpk.note_app.methods.Methods;
-import com.devpk.note_app.methods.NavigationUtil;
-import com.devpk.note_app.model.Note;
+import com.devpk.note_app.entities.Note;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;

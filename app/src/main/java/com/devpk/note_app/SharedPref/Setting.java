@@ -1,8 +1,10 @@
 package com.devpk.note_app.SharedPref;
 
-public class Setting {
+import java.io.Serializable;
 
-    public static boolean Dark_Mode = false;
+public class Setting implements Serializable {
+
+    public static boolean Dark_Mode = true;
     public static Boolean in_code = false;
-    public static int count = 0;
+    public static int adCount = 0;
 }
