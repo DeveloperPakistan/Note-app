@@ -15,7 +15,7 @@ public class SharedPref {
         editor = sharedPreferences.edit();
     }
 
-    public boolean getNightMode() {
+    public Boolean getNightMode() {
         return sharedPreferences.getBoolean("night_mode", false);
     }
 
@@ -31,7 +31,7 @@ public class SharedPref {
     }
 
     public String getCode() {
-        return sharedPreferences.getString("code", "");
+        return sharedPreferences.getString("code","");
     }
 
     public Boolean getIn_Code() {

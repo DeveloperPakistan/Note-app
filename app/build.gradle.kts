@@ -7,6 +7,8 @@ android {
     compileSdk = 33
 
     defaultConfig {
+
+
         applicationId = "com.devpk.note_app"
         minSdk = 24
         targetSdk = 33
@@ -14,6 +16,15 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += mapOf(
+                        "room.schemaLocation" to "$projectDir/schemas",
+                        "room.incremental" to "true"
+                )
+            }
+        }
     }
 
     buildTypes {
@@ -29,6 +40,9 @@ android {
 }
 
 dependencies {
+    // Room for simple persistence with an ORM
+    implementation("androidx.room:room-runtime:2.5.2")
+    annotationProcessor("androidx.room:room-compiler:2.5.2")
     //implementation("com.github.GrenderG:Toasty:1.4.2")
     implementation("androidx.multidex:multidex:2.0.1")
     implementation("com.intuit.sdp:sdp-android:1.0.6")
