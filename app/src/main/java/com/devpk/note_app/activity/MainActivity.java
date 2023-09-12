@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 
 import com.devpk.note_app.R;
 import com.devpk.note_app.SharedPref.Setting;
+import com.devpk.note_app.activity.About.AboutActivity;
 import com.devpk.note_app.adapter.NoteAdapter;
 import com.devpk.note_app.methods.Methods;
 import com.devpk.note_app.entities.Note;
@@ -76,7 +77,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         imageAddNoteMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent aboutActivity = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(aboutActivity);
             }
         });
 
