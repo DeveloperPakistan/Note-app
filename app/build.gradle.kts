@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+
+    implementation("com.github.mmmelik:RoundedImageView:v1.0.1")
     // Room for simple persistence with an ORM
     implementation("androidx.room:room-runtime:2.5.2")
     annotationProcessor("androidx.room:room-compiler:2.5.2")

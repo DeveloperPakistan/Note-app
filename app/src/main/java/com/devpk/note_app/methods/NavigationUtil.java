@@ -10,7 +10,6 @@ import com.devpk.note_app.activity.DeleteActivity.DeleteActivity;
 import com.devpk.note_app.activity.Setting.SettingActivity;
 
 public class NavigationUtil {
-
     public static void SettingActivity(@NonNull Activity activity) {
         ActivityCompat.startActivity(activity, new Intent(activity, SettingActivity.class), null);
         activity.finish();
